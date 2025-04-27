@@ -1,35 +1,26 @@
-# FySp
-#### FySp stands for *"Find your Streaming Platform"* It is a site that allows one to search a movie/tv show and find if they are available on the most popular streaming platforms (eg: Netflix, Amazon Prime Video, and Disney+)
-
-# How to use it
-#### Using FySp is really easy, all you need to do is search for your desired movie/tv show in the search bar and select the correct one from the results.. Simple!!
-
-# Libraries used
-- Flask
-    - I used *Flask* to merge all the Python functionalites with HTML. Basically, I used *Flask* to setup my backend for FySp.
-- Requests
-    - I used *requests* to make the API requests and fetch data from there and then do the necessary actions.
-
-# API
-#### A very vital part of this project was [TMDb API](https://www.themoviedb.org/documentation/api), it allowed me to make queries on thousands of movies/ tv shows and access their datas.
-
-# Routes
-#### There are five routes in FySp:
-- 1) Movies `(/)`
-    - This route is for searching the movies and choosing from a list of them
-- 2) Results `(/results)`
-    - This route shows the platform on which the selected movie is available on.
-- 3) TV Shows `(/tv)`
-    - This route is for searching tv shows and choosing from a list of them
-- 4) Tv Results `(/tv_results)`
-    - This route shows the platform on which the selected tv show is available on.
-- 5) Credits `(/credits)`
-    - This route just shows that the site uses TMDb API,
-    but isnt endorsed by them.
-
-
-# Reason behind making FySp
-#### I made FySp because, I always found it a hassle to find out which streaming platform a certain movie was on.. There were times, when all of a sudden I decided to watch a movie but lost all the mood when I kept on looking for which platform that was on. I might not have lost the mood if I had all the 3 popular platform's subscriptions, I only have Netflix and once I dont find a certain movie/tv show there, I need to go on a voyage on finding which one it is on and then sign up for that particular platform.
-
-# Disclaimer
-#### This site uses the ***TMDB API*** but **is not endorsed or certified** by [TMDB](https://www.themoviedb.org/).
+# The __new_main__ branch 
+It's been 3 years since I did that project. Since then I have tried to improve myself. Obviously, not all the way there yet, but still I took a dig at trying to **overhaul** the broken UI that I, an amateur, had made 3-4 years ago.
+# The Ugly Parts of the old UI vs the changes I made
+- Was using Bootstrap, which gives the UI a very _generic_ corporate look that I now detest
+    - So as I learnt more about HTML and CSS, certain methods, etc, I applied in this new UI
+    - Thereby, the new version uses fully raw HTML and CSS, no third party involved
+1. Poor alignments, lack of flair, consistency, unnecessary navigation links (changed to two radio buttons)
+    <div style="display: flex; justify-content: space-between;">
+    <img src="static/old.png" style="width: 50%;"/>
+    <img src="static/old_4.png" style="width: 50%;"/>
+    </div>
+    <br>
+    <img src="static/old_5.png" style="width: 100%;"/>
+    <br>
+    <img src="static/new.png" style="width: 100%"/>
+2. Disgusting Display of Results
+    <div style="display: flex; justify-content: space-between;">
+    <img src="static/old_2.png" style="width: 100%;"/>
+    <img src="static/new_2.png" style="width: 100%;"/>
+    </div>
+3. Not considering Mobile's constraints
+    <div style="display: flex; justify-content: space-between;">
+    <img src="static/old_3.png" style="width: 50%;"/>
+    <img src="static/old_6.png" style="width: 50%;"/>
+    </div>
+    <img src="static/new_3.png" style="width: 100%;"/>
