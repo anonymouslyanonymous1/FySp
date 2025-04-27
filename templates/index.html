@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FYSP</title>
+    <link rel="stylesheet" href="../static/styles.css">
+    <link rel="icon" href="../static/icon.png">
+</head>
+<body>
+    <div class="base">
+        <div class="extra">
+            <form class="data" method="get" action="">
+                <img src="../static/fysp.png" class="logo">
+                <div class="choices">
+                    <label class="choice">
+                        <input type="radio" name="choice" value="movie" checked>
+                        <span class="name">Movies</span>
+                    </label>
+                    <label class="choice">
+                        <input type="radio" name="choice" value="web">
+                        <span class="name">Web Series</span>
+                    </label>
+                </div>
+                <input type="text" placeholder="Name" class="search"  name="title" required>
+                <button type="submit">Search</button>             
+            </form>
+        </div>   
+    </div>
+    <div class="results">
+        <div class="wrapper">
+            {% block section %}
+                {% set i = namespace(value=0) %}
+                {% if movies %}
+                    {% for movie in range(movies) %}
+                    <div class="poster">
+                            <span class="info">
+                                <h5>{{ title[movie] }}</h5>
+                                <p> {{ summary[movie] }}</p>
+                                <div class="combiner">
+                                    <img src="{{ id[movie] }}" class="supplier">
+                                </div>  
+                            </span>
+                            <img class="poster_image" src="{{ poster[movie] }}">  
+                        {% set i.value = i.value + 1 %}
+                    </div>
+                    {% endfor %}
+                {% elif ok %}
+                    <div class="poster">
+                        <span class="info">
+                            <h5>{{ title[movie] }}</h5>
+                            <p> {{ summary[movie] }}</p>
+                            <div class="combiner">
+                                <img src="id{movie}" class="supplier">
+                            </div>  
+                        </span>
+                        <img class="poster_image" src="{{ poster[movie] }}">  
+                    </div>
+                {% endif %}
+            {% endblock %}
+        </div>
+        {% if error %}
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none" viewBox="0 0 24 24">
+                <path stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 13V8m0 8h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+            </svg>     
+            <p>Nothing here</p>
+        {% endif %}
+    </div>  
+</body>
+</html>
