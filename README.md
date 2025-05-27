@@ -2,7 +2,7 @@
 
 It's been nearly three years since I worked on this project. Back then, I was just getting started, and it shows — especially in the UI. Since then, I’ve grown, learned a lot, and finally decided to take a swing at redesigning the mess I once proudly called a user interface.
 
-It’s not perfect, but it’s a start — and it reflects how far I’ve come.
+It’s not perfect, but it’s a start
 
 ---
 
