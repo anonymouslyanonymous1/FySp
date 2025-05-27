@@ -1,26 +1,57 @@
-# The __new_main__ branch 
-It's been 3 years since I did that project. Since then I have tried to improve myself. Obviously, not all the way there yet, but still I took a dig at trying to **overhaul** the broken UI that I, an amateur, had made 3-4 years ago.
-# The Ugly Parts of the old UI vs the changes I made
-- Was using Bootstrap, which gives the UI a very _generic_ corporate look that I now detest
-    - So as I learnt more about HTML and CSS, certain methods, etc, I applied in this new UI
-    - Thereby, the new version uses fully raw HTML and CSS, no third party involved
-1. Poor alignments, lack of flair, consistency, unnecessary navigation links (changed to two radio buttons)
-    <div style="display: flex; justify-content: space-between;">
-    <img src="static/old.png" style="width: 50%;"/>
-    <img src="static/old_4.png" style="width: 50%;"/>
-    </div>
-    <br>
-    <img src="static/old_5.png" style="width: 100%;"/>
-    <br>
-    <img src="static/new.png" style="width: 100%"/>
-2. Disgusting Display of Results
-    <div style="display: flex; justify-content: space-between;">
-    <img src="static/old_2.png" style="width: 100%;"/>
-    <img src="static/new_2.png" style="width: 100%;"/>
-    </div>
-3. Not considering Mobile's constraints
-    <div style="display: flex; justify-content: space-between;">
-    <img src="static/old_3.png" style="width: 50%;"/>
-    <img src="static/old_6.png" style="width: 50%;"/>
-    </div>
-    <img src="static/new_3.png" style="width: 100%;"/>
+# The `new_main` Branch
+
+It's been nearly three years since I worked on this project. Back then, I was just getting started, and it shows — especially in the UI. Since then, I’ve grown, learned a lot, and finally decided to take a swing at redesigning the mess I once proudly called a user interface.
+
+It’s not perfect, but it’s a start — and it reflects how far I’ve come.
+
+---
+
+# What changed?
+
+### 1. The Bootstrap Problem
+
+* The old version leaned heavily on Bootstrap, resulting in that same generic corporate vibe we've all seen a thousand times.
+* With more experience under my belt — obviously not all the way there yet — I redesigned the entire UI or atleast tried to 💀
+
+### 2. Then vs. Now
+
+* Poor alignment
+* Lack of visual consistency
+* Unnecessary navigation elements
+* UI that felt more like a placeholder than a finished product
+
+> Now replaced with a cleaner interface, minimalistic navigation (just two radio buttons!), and better structure.
+
+<div style="display: flex; justify-content: space-between;">
+  <img src="static/old.png" style="width: 50%;"/>
+  <img src="static/old_4.png" style="width: 50%;"/>
+</div>
+<br/>
+<img src="static/old_5.png" style="width: 100%;"/>
+<br/>
+<img src="static/new.png" style="width: 100%;"/>
+
+---
+
+### 3. Results View
+
+* The old results layout was cluttered and hard to parse.
+* The new version is far more readable and purposefully spaced.
+
+<div style="display: flex; justify-content: space-between;">
+  <img src="static/old_2.png" style="width: 100%;"/>
+  <img src="static/new_2.png" style="width: 100%;"/>
+</div>
+
+---
+
+### 4. Mobile UI Optimisation
+
+* Previously, the UI barely acknowledged mobile screens. Elements broke. Layouts collapsed.
+* That’s now been addressed with flexible layout considerations and responsive design.
+
+<div style="display: flex; justify-content: space-between;">
+  <img src="static/old_3.png" style="width: 50%;"/>
+  <img src="static/old_6.png" style="width: 50%;"/>
+</div>
+<img src="static/new_3.png" style="width: 100%;"/>
