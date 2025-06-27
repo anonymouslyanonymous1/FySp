@@ -1,5 +1,5 @@
 # The __new_main__ branch 
-<img src=https://img.shields.io/badge/License-MIT-green.svg> <br>
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE) <br>
 <img src="https://skillicons.dev/icons?i=python,flask,html,css&theme=dark" /> 
 
 It's been 3 years since I did that project. Since then I have tried to improve myself. Obviously, not all the way there yet, but still I took a dig at trying to **overhaul** the broken UI that I, an amateur, had made 3-4 years ago.
